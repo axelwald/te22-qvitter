@@ -24,6 +24,10 @@
             <!-- <li><form action="/tweets/{{ tweet.id }}/delete" method="get">
               <button type="submit">Soptunneikon</button>
             </form></li> -->
+            <li><form action="/tweets/{{ tweet.id }}/edit" method="get">
+              <button type="submit">Edit</button>
+            </form></li>
+
             <li><form action="/tweets/delete" method="post">
               <input type="hidden" name="id" value="{{ tweet.id }}">
               <button type="submit">Soptunneikon</button>
